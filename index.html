@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Crypto Calendar - Token Unlocks & Events</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📅 Crypto Calendar</h1>
+            <p class="subtitle">Track token unlocks, protocol upgrades & major crypto events</p>
+            <div class="filters">
+                <input type="date" id="dateFilter" />
+                <select id="typeFilter">
+                    <option value="all">All Events</option>
+                    <option value="Unlock">Token Unlocks</option>
+                    <option value="Upgrade">Upgrades</option>
+                    <option value="Event">Major Events</option>
+                </select>
+                <button id="refreshBtn">🔄 Refresh</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="loading">Loading events...</div>
+        <div id="eventsGrid" class="events-grid"></div>
+        <div id="errorMessage" class="error-message"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Data powered by <a href="https://cryptopanic.com/" target="_blank">CryptoPanic</a></p>
+            <p>Stay ahead of the market 🚀</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
